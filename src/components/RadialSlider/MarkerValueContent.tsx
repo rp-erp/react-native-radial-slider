@@ -54,7 +54,7 @@ const MarkerValueContent = (props: MarkerValueContentProps) => {
 
         return (
           <G key={index.toString()}>
-            {(index % markerInnerValue === 0 || index === markIndex) && (
+            {(index % markerInnerValue === 0) && (
               <G
                 transform={`translate(${
                   radius + (lineHeight - thumbBorderWidth)
