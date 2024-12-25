@@ -7,12 +7,12 @@ const MarkerValueContent = (props: MarkerValueContentProps) => {
   const {
     radius = 100,
     thumbBorderWidth = 5,
-    min = 0,
+    // min = 0,
     max = 100,
-    markerValue,
-    fixedMarker = false,
+    // markerValue,
+    // fixedMarker = false,
     markerValueInterval = 10,
-    value,
+    // value,
     markerValueColor,
   } = props;
 
@@ -22,14 +22,14 @@ const MarkerValueContent = (props: MarkerValueContentProps) => {
   return (
     <>
       {marks.map((mark: { value: number }, index: number) => {
-        const markIndex = Math.floor(
+        /* const markIndex = Math.floor(
           (((((!fixedMarker ? (markerValue as number) : (value as number)) -
             min) *
             100) /
             (max - min)) *
             lineCount) /
             100
-        );
+        ); */
 
         const maxCount = (lineCount / max) as number;
 
