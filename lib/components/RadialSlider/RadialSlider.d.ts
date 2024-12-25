@@ -1,0 +1,46 @@
+import React from 'react';
+import type { RadialSliderProps } from './types';
+import { defaultProps } from './SliderDefaultProps';
+declare const RadialSlider: {
+    (props: RadialSliderProps & typeof defaultProps): React.JSX.Element;
+    defaultProps: {
+        radius: number;
+        min: number;
+        max: number;
+        step: number;
+        value: number;
+        title: string;
+        subTitle: string;
+        unit: string;
+        thumbRadius: number;
+        thumbColor: string;
+        thumbBorderWidth: number;
+        thumbBorderColor: string;
+        markerLineSize: number;
+        sliderWidth: number;
+        sliderTrackColor: string;
+        lineColor: string;
+        lineSpace: number;
+        linearGradient: {
+            offset: string;
+            color: string;
+        }[];
+        onChange: (_v: number) => void;
+        onComplete: (_v: number) => void;
+        openingRadian: number;
+        disabled: boolean;
+        isHideSlider: boolean;
+        isHideTitle: boolean;
+        isHideSubtitle: boolean;
+        isHideValue: boolean;
+        isHideTailText: boolean;
+        isHideButtons: boolean;
+        isHideLines: boolean;
+        isHideMarkerLine: boolean;
+        isHideCenterContent: boolean;
+        fixedMarker: boolean;
+        variant: string;
+        markerValueInterval: number;
+    };
+};
+export default RadialSlider;
